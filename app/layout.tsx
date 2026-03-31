@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import NavBar from "@/components/NavBar";
-import { Geist } from "next/font/google";
-import { cn } from "@/lib/utils";
-
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Elijah Cea",
@@ -19,10 +15,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn('h-full antialiased', "font-sans", geist.variable)}
+      className={'h-full antialiased'}
     >
       <body className="min-h-full flex flex-col">
-        <NavBar />
+        <Header />
         {children}
         </body>
     </html>
