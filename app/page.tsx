@@ -1,4 +1,5 @@
 import ExperienceTabs from "@/components/ExperienceTabs";
+import ProjectCards from "@/components/ProjectCards";
 import {
   IconBrandGithub,
   IconBrandLinkedin,
@@ -15,10 +16,21 @@ export default function Home() {
           nice to meet you!
         </h1>
         <p className="font-medium py-6">
-          I&apos;m passionate about full-stack development and inspired by the
-          positive impact writing code can have on people&apos;s lives. From
-          Economics grad to Cloud Engineer, my curiosity for how things work
-          under the hood continues to drive me on my coding journey.{" "}
+          I&apos;m passionate about{" "}
+          <span className="text-rose-400 underline decoration-wavy">
+            Full-Stack
+          </span>
+          &#32; development and inspired by the positive impact writing code can
+          have on people&apos;s lives. From{" "}
+          <span className="text-rose-400 underline decoration-wavy">
+            Economics
+          </span>
+          &#32; grad to &#32;
+          <span className="text-rose-400 underline decoration-wavy">
+            Cloud Engineer
+          </span>
+          , my curiosity for how things work under the hood continues to drive
+          me on my coding journey.{" "}
         </p>
         <div className="flex flex-wrap gap-4 font-medium">
           <a
@@ -54,11 +66,12 @@ export default function Home() {
         <ExperienceTabs />
       </section>
 
-      <section>
+      <section className="flex flex-col gap-4 items-center w-full pt-6">
         <h2 className="text-2xl font-semibold inline-flex items-center gap-2">
           <IconHeart size={28} fill="lab(64.4125 63.0291 19.2068)" stroke="0" />
           Featured Projects
         </h2>
+        <ProjectCards />
       </section>
     </main>
   );
