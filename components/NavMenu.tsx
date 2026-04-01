@@ -17,9 +17,9 @@ export default function NavMenu() {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="relative cursor-pointer transition-opacity ease-in-out duration-250 text-foreground hover:opacity-60"
+        className="relative cursor-pointer transition-opacity ease-in-out duration-250 text-foreground hover:opacity-60 align-middle"
       >
-        <Bars3Icon className="size-5" />
+        <Bars3Icon className="size-7" />
       </button>
       <Dialog open={isOpen} onClose={setIsOpen} className="relative z-10">
         <DialogBackdrop
@@ -54,11 +54,10 @@ export default function NavMenu() {
                     </div>
 
                     <div className="mt-8">
-                      <div className="flow-root">
+                      <div className="flow-root"></div>
                     </div>
                   </div>
-                  </div>
-                  </div>
+                </div>
               </DialogPanel>
             </div>
           </div>
