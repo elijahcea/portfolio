@@ -14,7 +14,7 @@ export default function ExperienceTabs() {
           ],
         },
         {
-          title: "Cloud Engineer I/II",
+          title: "Cloud Engineer II",
           duration: "May 2023 - Present",
           highlights: [
             "Consulted technical leaders across diverse industries on cloud architecture, security, and cost saving.",
@@ -56,7 +56,7 @@ export default function ExperienceTabs() {
           Education
         </Tab>
       </TabList>
-      <TabPanels className="mt-2 border border-foreground/10 rounded-lg p-4">
+      <TabPanels className="mt-2 border border-foreground/10 rounded-lg shadow-xl p-4">
         <TabPanel>
           <ul>
             {work.map((i) => (
