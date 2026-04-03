@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Elijah Cea",
@@ -14,9 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="h-full flex flex-col bg-background text-foreground">
-        <Header />
-        {children}
+      <body className="h-full bg-background text-foreground">
+        <div className="flex flex-col min-h-full max-w-5xl mx-auto">
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
