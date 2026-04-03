@@ -6,28 +6,27 @@ export default function ExperienceTabs() {
       company: "CloudHesive",
       roles: [
         {
-          title: "Full-Stack Developer Trainee",
+          title: "Developer Trainee",
           duration: "Jan 2026 - Present",
           highlights: [
-            "Built GraphQL resolvers on AWS AppSync and integrated them into a Vue 3 frontend.",
-            "Designed elegant and user friendly Vue 3 components with state indicators to enhance UX.",
+            "Built GraphQL resolvers using Node.js and AWS AppSync, then integrated them into a Vue 3 frontend",
+            "Designed elegant and user friendly Vue 3 components with state change indicators to enhance UX",
           ],
         },
         {
           title: "Cloud Engineer II",
           duration: "May 2023 - Present",
           highlights: [
-            "Consulted technical leaders across diverse industries on cloud architecture, security, and cost saving.",
-            "Led a large-scale multi-region AWS disaster recovery project to enhance data resiliency and environment reliablity whilst meeting required recovery SLAs.",
+            "Led a large-scale multi-region AWS disaster recovery project to enhance data resiliency and reliability whilst meeting recovery SLAs",
+            "Supported a large-scale migration to AWS for a federal loan servicer under the U.S. Department of Education, automating infrastructure configuration using Terraform, GitLab, and Python",
           ],
         },
         {
           title: "System Administrator",
           duration: "May 2022 - May 2023",
           highlights: [
-            "Secured and monitored AWS environments for small to medium sized businesses within a managed services team.",
-            "Led a company-wide rollout of Microsoft Intune for centralizing employee endpoint management and security",
-            "Assisted with gathering evidence and remediating tasks required for customer's AWS environment compliance with SOC 2 and HIPAA audits.",
+            "Secured and monitored AWS environments for small to medium sized businesses within a managed services team",
+            "Ensured SOC 2 and HIPAA compliance by remediating AWS environments across internal and customer accounts",
           ],
         },
       ],
