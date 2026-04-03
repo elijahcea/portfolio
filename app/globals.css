@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: oklch(27.269% 0.17019 269.889);
-  --foreground: oklch(92.2% 0 0);
+  --background: oklch(100% 0.00011 271.152);
+  --foreground: rgb(83, 86, 109);
+  /* --background: oklch(27.269% 0.17019 269.889);
+  --foreground: oklch(92.2% 0 0); */
 }
 
 @theme {
