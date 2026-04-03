@@ -17,8 +17,6 @@ export default function NavMenu() {
   const links = [
     { title: "Home", href: "/" },
     { title: "About", href: "/about" },
-    { title: "Projects", href: "/projects" },
-    { title: "Resume", href: "/resume" },
   ];
 
   return (
@@ -71,6 +69,18 @@ export default function NavMenu() {
                             </li>
                           </Link>
                         ))}
+                        <a
+                          href="resume.pdf"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <li
+                            onClick={() => setIsOpen(false)}
+                            className="p-2 rounded transition-colors hover:bg-foreground/10 duration-250"
+                          >
+                            Resume
+                          </li>
+                        </a>
                       </ul>
                     </nav>
                   </div>
