@@ -41,22 +41,21 @@ export default function ExperienceTabs() {
       duration: "August 2020 - August 2023",
       highlights: [
         "Graduated with a Minor in Business",
-        "3.4 GPA",
         "Member of the National Society of Leadership and Success",
       ],
     },
   ];
   return (
-    <TabGroup defaultIndex={0}>
-      <TabList className="flex justify-around gap-1 bg-indigo-900 rounded p-1 text-sm">
-        <Tab className="w-full text-foreground/70 rounded px-3 py-1 data-hover:bg-background/20 data-selected:bg-background data-selected:text-foreground">
+    <TabGroup defaultIndex={0} className="w-full">
+      <TabList className="flex justify-around gap-1 bg-foreground/5 rounded-lg p-1 border border-foreground/5">
+        <Tab className="w-full text-foreground/50 rounded-md px-3 py-1 data-hover:bg-background/30 data-selected:bg-background data-selected:text-foreground data-selected:shadow">
           Work
         </Tab>
-        <Tab className="w-full text-foreground/70 rounded px-3 py-1 data-hover:bg-background/20 data-selected:bg-background data-selected:text-foreground">
+        <Tab className="w-full text-foreground/50 rounded-md px-3 py-1 data-hover:bg-background/30 data-selected:bg-background data-selected:text-foreground data-selected:shadow">
           Education
         </Tab>
       </TabList>
-      <TabPanels className="mt-2 border border-foreground/10 rounded-lg shadow-xl p-4">
+      <TabPanels className="mt-2 border border-foreground/10 rounded-lg shadow p-4">
         <TabPanel>
           <ul>
             {work.map((i) => (
