@@ -6,17 +6,23 @@ import {
   IconBriefcase,
   IconHeart,
   IconMail,
+  IconMapPin,
 } from "@tabler/icons-react";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center px-8 pt-8 gap-14">
-      <section className="flex flex-col w-full gap-6">
-        <div>
+      <section className="grid grid-cols-1 md:grid-cols-3 w-full gap-6">
+        <div className="col-span-2">
           <h1 className="font-bold text-4xl">
             I&apos;m <span className="text-rose-400">Elijah Cea</span>. <br />
             Nice to meet you!
           </h1>
+          <div className="flex items-center gap-1 pt-4">
+            <IconMapPin />
+            <span>Miami, FL</span>
+          </div>
+
           <p className="font-medium text-lg py-6 max-w-prose">
             I&apos;m passionate about{" "}
             <span className="text-rose-400 underline underline-offset-3 decoration-wavy">
@@ -30,14 +36,19 @@ export default function Home() {
             &#32; grad to &#32;
             <span className="text-rose-400 underline underline-offset-3 decoration-wavy">
               Cloud Engineer
+            </span>{" "}
+            and{" "}
+            <span className="text-rose-400 underline underline-offset-3 decoration-wavy">
+              Web Developer
             </span>
             , my curiosity for how things work under the hood continues to drive
-            me on my coding journey.{" "}
+            me on my tech journey.{" "}
           </p>
           <div className="flex flex-wrap gap-4 font-medium">
             <a
               href="https://github.com/elijahcea"
               target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2"
             >
               <IconBrandGithub />
@@ -49,6 +60,7 @@ export default function Home() {
             <a
               href="https://www.linkedin.com/in/elijahcea/"
               target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2"
             >
               <IconBrandLinkedin />
@@ -66,10 +78,11 @@ export default function Home() {
 
         <div>
           <img
-            src="/portrait-1-mb.webp"
+            src="/portrait-1.webp"
             alt="Picture of Elijah"
             height={250}
             width={200}
+            loading="lazy"
             className="rounded-md mx-auto"
           />
         </div>
