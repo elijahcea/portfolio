@@ -9,9 +9,17 @@ import {
 import { useState } from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Bars3Icon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 export default function NavMenu() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const links = [
+    { title: "Home", href: "/" },
+    { title: "About", href: "/about" },
+    { title: "Projects", href: "/projects" },
+    { title: "Resume", href: "/resume" },
+  ];
 
   return (
     <>
@@ -21,10 +29,10 @@ export default function NavMenu() {
       >
         <Bars3Icon className="size-7" />
       </button>
-      <Dialog open={isOpen} onClose={setIsOpen} className="relative z-10">
+      <Dialog open={isOpen} onClose={setIsOpen} className="relative z-15">
         <DialogBackdrop
           transition
-          className="fixed inset-0 bg-gray-500/75 transition-opacity duration-250 ease-in-out data-closed:opacity-0"
+          className="fixed inset-0 bg-gray-500/75 backdrop-blur-xs transition-opacity duration-250 ease-in-out data-closed:opacity-0"
         />
 
         <div className="fixed inset-0 overflow-hidden">
@@ -32,12 +40,12 @@ export default function NavMenu() {
             <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10 sm:pl-16">
               <DialogPanel
                 transition
-                className="pointer-events-auto w-screen max-w-md transform transition duration-250 ease-in-out data-closed:translate-x-full sm:duration-350"
+                className="pointer-events-auto w-screen max-w-64 transform transition duration-250 ease-in-out data-closed:translate-x-full sm:duration-350"
               >
-                <div className="flex h-full flex-col overflow-y-auto bg-foreground shadow-xl">
-                  <div className="flex-1 overflow-y-auto p-4 sm:px-6">
-                    <div className="flex items-start justify-between">
-                      <DialogTitle className="text-lg font-medium text-gray-900">
+                <div className="flex h-full flex-col overflow-y-auto bg-background shadow-xl">
+                  <div className="flex-1 overflow-y-auto">
+                    <div className="flex items-start justify-between p-4 border-b border-foreground/10">
+                      <DialogTitle className="text-lg font-semibold text-rose-400">
                         Navigation
                       </DialogTitle>
                       <div className="ml-3 flex h-7 items-center">
@@ -46,16 +54,25 @@ export default function NavMenu() {
                           onClick={() => setIsOpen(false)}
                           className="cursor-pointer relative -m-2 p-2 text-gray-400 hover:text-gray-500"
                         >
-                          <span className="absolute -inset-0.5" />
-                          <span className="sr-only">Close panel</span>
                           <XMarkIcon aria-hidden="true" className="size-6" />
                         </button>
                       </div>
                     </div>
 
-                    <div className="mt-8">
-                      <div className="flow-root"></div>
-                    </div>
+                    <nav className="font-semibold p-4 border-b border-foreground/10">
+                      <ul className="flex flex-col gap-4">
+                        {links.map((i) => (
+                          <Link key={i.title} href={i.href}>
+                            <li
+                              onClick={() => setIsOpen(false)}
+                              className="p-2 rounded transition-colors hover:bg-foreground/10 duration-250"
+                            >
+                              {i.title}
+                            </li>
+                          </Link>
+                        ))}
+                      </ul>
+                    </nav>
                   </div>
                 </div>
               </DialogPanel>
