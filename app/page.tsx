@@ -23,7 +23,7 @@ export default function Home() {
             <span>Miami, FL</span>
           </div>
 
-          <p className="font-medium text-lg py-6 max-w-prose">
+          <p className="font-medium text-lg py-4 max-w-prose">
             I&apos;m passionate about{" "}
             <span className="text-rose-400 underline underline-offset-3 decoration-wavy">
               Full-Stack
