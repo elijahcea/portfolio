@@ -10,13 +10,25 @@ export default function Footer() {
   return (
     <footer className="flex flex-col items-center gap-4 mt-auto text-xs py-12 w-full">
       <div className="flex items-center gap-4">
-        <a href="" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/elijahcea"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <IconBrandGithub />
         </a>
-        <a href="" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/elijahcea/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <IconBrandLinkedin />
         </a>
-        <a href="" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.instagram.com/elijah_cc"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <IconBrandInstagram />
         </a>
       </div>
