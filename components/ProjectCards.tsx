@@ -43,7 +43,7 @@ export default function ProjectCards() {
           key={p.title}
           className="flex flex-col gap-2 border border-foreground/10 p-6 rounded-lg shadow"
         >
-          <div>
+          <div className="self-center">
             <img
               src={p.imageUrl}
               alt={p.imageAlt}
