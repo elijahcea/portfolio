@@ -6,7 +6,7 @@ export default function ExperienceTabs() {
       company: "CloudHesive",
       roles: [
         {
-          title: "Developer Trainee",
+          title: "Web Developer Trainee",
           duration: "Jan 2026 - Present",
           highlights: [
             "Built GraphQL resolvers using Node.js and AWS AppSync, then integrated them into a Vue 3 frontend",
