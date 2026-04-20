@@ -52,17 +52,18 @@ export default function About() {
           <div className="col-span-2 leading-7 font-medium">
             <p className="pb-6">
               Hey! I&apos;m Elijah, an Economics grad turned techie. I&apos;m a{" "}
-              {age()} year-old aspiring software developer based out of South
-              Florida. I thoroughly enjoy the challenge of learning new things
-              and meeting great people along the way.{" "}
+              {age()} year-old Cloud Engineer and aspiring Software Developer
+              based out of South Florida. I thoroughly enjoy the challenge of
+              learning new things and meeting great people along the way.{" "}
             </p>
             <p className="pb-6">
-              My journey in tech began in Cloud IT, and I fell in love with
+              My journey in tech began in Cloud IT, where I fell in love with
               trying to uncover what made the internet tick. I learnt how to
-              manage and deploy application infrastructure and software on cloud
-              providers such as AWS, and I am taking the next step of building
-              those very apps hands-on. Join me on this journey of creating
-              impactful, innovative software!
+              manage, design, and deploy scalable application infrastructure on
+              major cloud providers such as AWS. Now I&apos;m taking the next
+              step of building the very applications I&apos;ve kept running on
+              the cloud. Join me on this journey of creating impactful,
+              innovative software!
             </p>
 
             <p>
