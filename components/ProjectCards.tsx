@@ -24,7 +24,7 @@ export default function ProjectCards() {
       imageUrl: "preuve-admin.webp",
       imageAlt: "admin.preuvenewyork.com product details page",
       description:
-        "Now that I had a sleek storefront, I needed a way to manage the products to be put on display. Thus came about the Preuve Admin project! Built using VueJS, users can create and manage products, variants, and collections using the APIs exposed by the Preuve Storefront Next.js project. Persistent operations require authentication and authorization enforced by Auth0.",
+        "Now that I had a sleek storefront, I needed a way to manage the products to be put on display. Thus came about the Preuve Admin project! A Vue.js SPA where users can create and manage products, variants, and collections using the APIs exposed by the Preuve Storefront Next.js project. Persistent operations require authentication and authorization enforced by Auth0. Take a look!",
       technologies: [
         "Vue.js",
         "TailwindCSS",
